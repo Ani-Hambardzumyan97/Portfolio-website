@@ -1,0 +1,412 @@
+
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT sans', sans-serif;
+}
+html{
+   scroll-behavior: smooth;
+    font-size: 100%
+}
+.cont{
+    padding: 0, 100px, 0, 100px;
+}
+nav, ul,
+.main-intro,
+.works{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+body{
+   background-image: url(plush-design-studio-kfDHPpCQEBQ-unsplash.jpg);
+    background-repeat:no-repeat;
+    background-size:contain;
+    max-width: 100%;
+    
+    
+}
+header{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    padding:20px, 0;
+ 
+}
+.navbar{
+    background-color: #FFE9E6;
+    margin-left:0px;
+    padding: 10px;
+    
+}
+.navbar .icon {
+  display: none;
+}
+
+
+header h1,
+header a,
+.intro p,
+.about h1,
+.skills h1,
+.works h1,
+.contact h1{
+    color:#000000;
+}
+
+li{
+    list-style: none;
+    margin-left:20px;
+}
+
+a{
+    text-decoration: none;
+    font-size:20px;
+    text-transform: uppercase;
+    position: relative;
+    top:50%;
+    bottom: 50%;
+    transform: translateY(-50%);
+    
+}
+li a:hover{
+    color: #FA255E;
+   font-family: cursive;
+}
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 50px;
+    height: 50px;
+  text-align:justify;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover{
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.main-intro{
+    height: calc(100vh-81.6px);
+    margin-left: 50px;
+     margin-top:200px;
+}
+.inro-content{
+   
+    
+}
+.typewriter{
+    margin-left: 10px;
+}
+.intro-content h1{
+    color:#000000;
+    font-size: 3rem;
+    cursor: context-menu;
+}
+
+.intro-content span{
+    display: inline-block;
+}
+
+.intro-contact a{
+    padding: 25px 40px;
+    margin-left: 20px;
+    background-color: none;
+    border: 3px solid #FA255E;
+    color: #FA255E;
+    font-size:.8rem;
+    letter-spacing: 2px;
+    position:relative;
+    top:80px;
+    overflow:hidden;
+    transition: .5s;
+    display: inline-block;
+}
+
+.intro-contact a:hover{
+    color:#fff;
+}
+.intro-contact a::before{
+    content: '';
+    background-color: #FA255E;
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:0%;
+    z-index: -1;
+    transition: .5s;
+}
+.intro-contact a:hover::before{
+    height: 100%;
+    
+}
+
+.photo img{
+    width: 450px;
+    margin-top: 50px;
+    
+}
+
+.about{
+   background-image: url(shapelined-_JBKdviweXI-unsplash.jpg);
+    margin-top: 0;
+}
+.about h1,
+work h1{
+    font-size:10rem;
+    z-index: 0;
+    opacity: .1;
+    
+}
+
+.about-info{
+    max-width: 900px;
+    box-shadow: 0, 0, 1.2rem rgba(0, 0, 0, 25);
+    padding: 100px;
+    position: relative;
+    top:-70px;
+    left:50%;
+    right: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    align-content: center;
+}
+
+.about-info p{
+    font-size: 1.3rem;
+    color: #FA255E;
+}
+.about-info p:nth-child(2),
+.about-info p:last-child
+{
+margin-top: 30px;
+}
+
+
+.skills{
+    height: 70vh;
+    margin-top: 630px;
+    
+    
+}
+
+
+.skills h1,
+.contact h1,
+.about h1{
+    text-align: right;
+    font-size:10rem;
+    opacity: .1;
+}
+
+
+html{
+    display:block;
+    margin-bottom: 40px;
+}
+
+
+div[class^="tag-"]{
+    clip-path:polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
+    width: 120px;
+    height: 30px;
+    background-color: #000;
+    margin-right: 30px;
+    
+}
+
+div[class^='tag-'] p{
+    color: #FA255E;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 1.1rem;
+    padding-top: 3px;
+    
+}
+.pr-bar{
+   position: relative;
+    width: 600px;
+    height: 20px;
+    border:2px solid #FA255E;
+    border-radius: 20px;
+    margin-top: 7px;
+    
+}
+.practive{   
+     background-color: #FA255E
+        
+}
+.skillbtn{
+    padding: 20px;
+    margin-top: 10px;
+    background-color:#FFE9E6;
+    color: #000;
+    border-radius: 40%;
+    box-shadow: 30%, 20%
+}
+.skillbtn:hover{
+    background-color: #FA255E;
+}
+.skillpercent{
+    visibility:hidden;
+}
+.bar{
+    position: absolute;
+    height: 10px;
+    border-radius: 20px;
+    margin:2.7px; 
+   
+}
+
+.bar-html,
+.bar-css,
+.bar-javascript,
+.bar-jquery,
+.bar-bootstrap{
+    width:calc(0 - 6px)
+}
+
+#contact{
+    margin-top:50px;
+    color: #FA255E;
+}
+
+form input,
+form textarea{
+    display: block;
+    width:500px;
+    padding: 20px;
+    background-color:white;
+    border: 1px solid #FA255E ;
+    margin:20px 0;
+    outline: none;
+    font-size:1.2rem;
+    color:#000;
+    position: relative;
+    left:50%;
+    right: 50%;
+    transform: translateX(-50%)      
+}
+form input:hover[type='submit']{
+    background-color: #FA255E;
+}
+.submitbtn:active[type='submit']{
+    background-color: #FA255E;
+}
+.contact-box{
+    background-color:#FFE9E6;
+    margin-bottom: 0px;
+   
+    
+}
+footer{
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 0;
+}
+.logo img{
+    width: 500px;
+    height: 120px;
+}
+.typewriter p {
+    margin-top: 70px;
+    font-size: 30px;
+  color: #000;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #FA255E; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+ /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #FA255E }
+}
+hr{
+   padding: 50px;
+    color: #FA255E;
+}
+
+@media (min-width: 640px) { body {font-size:1rem;} } 
+@media (min-width:960px) { body {font-size:1.2rem;} } 
+@media (min-width:1100px) { body {font-size:1.5rem;} } 
+
+
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    .typewriter p { width:100%; font-size: 1rem; animation: 
+    typing 3.5s steps(30, end)}
+    header li a{font-size: 10px;}
+    .fa{  width: 30px;
+    height: 30px;
+    float: right;
+    font-size: 15px}
+
+#Skills .pr-bar{
+    width:80%;
+}
+    body{
+        height: 100%;
+    }
+    .bar p{
+        margin-right: 30%;
+    }
+.about{
+    margin-top: 50px;
+}
+.about-info p{
+    font-size:1rem;
+}
+form input{
+   width: 70%;
+}
+form textarea{
+    width:70%;
+}
+footer p{
+    font-size: 10px;
+}
+footer a{
+    font-size: 10px;
+}
+}
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    .skills { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="portfolio.css">
+        <script>
+                    history.scrollRestoration = "manual";
+                    $(window).on('beforeunload', function(){
+                    $(window).scrollTop(0);
+                     });
+            function move(){
+    
+         var prArray=document.querySelectorAll('.bar');
+                prArray.forEach(function(elem){
+                    elem.classList.add("practive")
+                })
+                var par=document.querySelectorAll('.skillpercent');
+                par.forEach(function(elem){
+                    elem.style.visibility='visible'; 
+                })
+}      
+</script>
+        
+        <title>Ani Hambardzumyan</title>
+
+    </head>
+    <body>  
+        <div class='cont navbar' id='topnav'>
+            <div >
+            <header>
+               <div class='logo'><img src='default.png' href='index.html'></div>
+                 <nav>
+                   <ul>
+                   <li style="float: left"><a href='index.html' active>Home</a></li>
+                       <li><a href='#Skills' aria-describedby="">Skills</a></li>
+                       <li><a href='#About'>About</a></li>
+                    <li><a href='#Works'>Works</a></li>
+                    <li><a href='#Contact'>Contact</a></li>
+                   </ul>
+                </nav>
+                <div class='icon'><img src="https://img.icons8.com/cotton/64/000000/menu.png"/></div>
+              <div class='social-media'>
+                <a href="https://www.facebook.com/ani.hambarcumyan.75?ref=bookmarks" class="fa fa-facebook" target="_blank"></a>
+                <a href="mailto:anihambardzumyan97@gmail.com" class="fa fa-google" target="_blank" ></a>
+                <a href="https://www.linkedin.com/in/ani-hambardzumyan-561267167/" class="fa fa-linkedin" target="_blank"></a>
+                <a href="https://www.instagram.com/ani_hambardzumyan1111/" class="fa fa-instagram" target="_blank"></a>
+              </div>
+                </header>
+            </div> 
+        </div>
+       <div class='typewriter'>
+           <p >Hello, my name is <span style="color: #FA255E">Ani</span>. I am a Web Developer.</p> 
+             </div>
+        
+           
+        <div class='intro-contact'>
+          <div><a href='#Contact'>Contact Me</a>
+        </div>
+            <!---<div class='photo'><img src='48357737_1492872037523556_3726988854998073344_n.jpg' alt='' style="height: 320px; width:300px">
+            </div>-->
+        </div>
+        
+        <div class='cont skills' >
+            <section id='Skills'>
+            <h2>My skills</h2>
+            <div class='html'>
+              <div class='tag-html'>
+                <p>HTML</p>
+              </div>
+              <div class='pr-bar' >
+                <div class='bar' style="width: 90%" ></div><p class='skillpercent' style="margin-left: 600px">90%</p>
+             </div>
+            </div>
+            <div class='css'>
+              <div class='tag-css'>
+                  <p>CSS</p>
+              </div>
+              <div class='pr-bar' >
+                <div class='bar' style='width:90% '></div><p class='skillpercent' style="margin-left: 600px">90%</p>
+              </div>
+            </div>
+            <div class="javascript">
+              <div class='tag-javaScript'>
+                <p>JavaScript</p>
+              </div>
+              <div class='pr-bar'>
+                <div class='bar'  style='width: 85%'></div><p class='skillpercent' style="margin-left: 600px">85%</p>
+              </div>
+            </div>
+            <div class='jquery' >
+              <div class='tag-jquery'>
+                  <p>JQuery</p>
+              </div>
+              <div class='pr-bar'>
+                <div class='bar'style='width: 70%'></div><p class='skillpercent' style="margin-left: 600px">70%</p>
+              </div>
+            </div>
+            <div class='bootstrap'>
+               <div class='tag-bootstrap'>
+                   <p>Bootstrap</p>
+               </div>
+               <div class='pr-bar'>
+                <div class='bar' style='width: 75%'></div><p class='skillpercent' style="margin-left: 600px">75%</p>
+               </div>
+            </div>
+            <button class='skillbtn' onclick="move()">Click to see my skills!!</button>
+                </section>
+        </div> 
+        <br>
+        <div class='cont about' id='About'>
+            <h2>About Me</h2>
+            <div class='about-info'>
+                <p>Hello, my name is Ani. I am a Front-End Web Developer living in Bethlehem, PA. I have experience implementing links, tools and similar features into web designs and I can prepare documents and keep accurate daily reports. I am self-motivated, I use good judgment and I have the ability to manage my time wisely to meet deadlines. I have excellent verbal and written skills that make it easy to understand information and to articulate my ideas clearly, so others can understand. I stay updated on all the latest trends and developments associated with this industry and I have the knowledge to apply this information where appropriate. I also have the ability to adhere to all standards, rules and coding standards set forth by management.</p>
+            </div>
+            </div>
+        <div class='cont works' id='Works'><h2>My works</h2></div>  
+        <div class='contact-box'>
+           <div class='cont contact' id='Contact'><h2>Contact Me</h2>
+           <form method="post" action="mailto:anihambardzumyan97@gmail.com"
+
+method=”POST
+
+enctype=”multipart/form-data”
+
+name=”EmailForm”>
+             <input type='text' name='name' placeholder="Full Name">
+             <input type='email' placeholder="Email">
+             <input type='email' placeholder="anihambardzumyan97@gmail.com" disabled>
+             <textarea name="message" cols="30" rows='10' placeholder='Message'></textarea>
+             <input type='submit'>
+           </form>   
+        </div>
+       </div>
+            <footer><p>2020 Copyright <a href=#>Ani Hambardzumyan </a>All rights reserved.</p></footer>
+    </body>
+ 
+</html>
